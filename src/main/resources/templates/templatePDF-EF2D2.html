@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+
+<body>
+	<div class="w-100 container head">
+		<div class="w-35 f-left">
+			<img th:attr="src=@{/images/logo-sernanp.jpeg}" src="../public/images/logo-sernanp.jpeg" class="logo"
+				title="SERNANP" alt="Template 01 - Proyecto SERNANP" />
+		</div>
+		<div class="w-65 f-right">
+			<h3 class="text-center">DDE - UOF Políticas y Prospectivas</h3>
+		</div>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th class="w-20">Nivel de biodiversidad</th>
+					<th class="w-20">LISTA DE ATRIBUTOS</th>
+					<th class="w-60">DEFINICIÓN</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="8" class="text-center">Paisaje-Ecosistema-Comunidad</td>
+					<td>Cobertura vegetal</td>
+					<td>Es la capa de vegetación natural que cubre una superficie terrestre. La cobertura vegetal considera una unidad de medida (cm, m, Km, Ha)</td>
+				</tr>
+				<tr>
+					<td>Superficie del Ecosistema (Para Ecosistemas sin Bosques)</td>
+					<td>Es la extensión que delimita, separa y distingue un hábitat de otro. </td>
+				</tr>
+				<tr>
+					<td>Fragmentación</td>
+					<td>Atributo referido al proceso en el cual un sistema es transformada en un número de parches más pequeños que se encuentran aislados entre sí por una matriz con propiedades diferentes a la del hábitat original. Esta puede ser de manera natural (procesos geológicos e incendios) o antropogénica (Wilcove et al, 1986).</td>
+				</tr>
+				<tr>
+					<td>Conectividad</td>
+					<td>Es la capacidad de un sistema de tener  espacios funcionalmente interconectados. Esto hace posible el desplazamiento de individuos, los procesos de recolonización, flujos genéticos y otros procesos (Plan Director2009). La conectividad también puede ser definida como el número de conexiones entre parches de hábitat en relación con el número máximo de conexiones potenciales o las interconexiones de procesos clave dentro y entre ecosistemas (Lindenmayer y Fischer 2007).</td>
+				</tr>
+				<tr>
+					<td>Calidad del recurso hídrico</td>
+					<td>El atributo está referido a las características químicas, físicas, biológicas y radiológicas del agua (Diersing, 2009)</td>
+				</tr>
+				<tr>
+					<td>Calidad del suelo</td>
+					<td>El atributo está referido a la capacidad que tiene un tipo específico de suelo (parámetos físicos, químicos, biológicos) dentro de los límites de un ecosistema que permite la sostenibilidad de las plantas y animales (Quinteros, 1980)</td>
+				</tr>
+				<tr>
+					<td>Proporción de endemismo, exótico, especies amenazadas y en peligro de extinción.</td>
+					<td>Este atributo está relacionado con la proporción de comunidades de poblaciones endémicas, exóticas, especies amenazadas y en peligro de extinción de un sistema. Un sistema saludable tendrá una mayor proporción de poblaciones endémicas (paper de atributos)</td>
+				</tr>
+				<tr>
+					<td>Riqueza</td>
+					<td>Es el número total de espcies que se encuentra en un sistema (Paisaje, Ecosistéma, hábitat, etc)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>

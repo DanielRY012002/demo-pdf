@@ -1,0 +1,154 @@
+body {
+  height: auto;
+  width: 100%;
+  margin: 0;
+}
+
+.logo {
+  text-align: center;
+  float: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagebreak {
+  page-break-before: always;
+} /* page-break-after works, as well */
+
+.tabla-detalle {
+  margin: 40px 0px 40px 0px;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  border-collapse: collapse;
+}
+.tabla-detalle th {
+  background-color: #464a4b;
+  border-color: #060707;
+  color: white;
+  font-family: "Raleway";
+  font-size: 15px;
+}
+.tabla-detalle td {
+  color: #666;
+  font-family: "Raleway";
+  font-size: 15px;
+  padding: 10px 10px 10px 15px;
+  border: 1pt solid #dce4e6;
+  margin: 0;
+  text-align: center;
+}
+
+.tabla-pie {
+  font-size: 11px;
+  color: #f1f1f1;
+  color: #999;
+  font-family: Arial;
+  font-weight: normal;
+  width: 100%;
+}
+
+.red {
+  background-color: red;
+}
+
+#footer {
+  position: running(footer);
+  text-align: center;
+}
+
+@page {
+  @bottom-right {
+    content: element(footer);
+  }
+}
+
+.d-none {
+  border: none;
+  background-color: white;
+}
+.head{
+  height:70px;
+}
+.w-10 {
+  width: 10%;
+}
+.w-20{
+  width: 20%;
+}
+.w-25{
+  width: 25%;
+}
+.w-30 {
+  width: 30%;
+}
+.w-35 {
+  width: 35%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-45 {
+  width: 45%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-65 {
+  width: 65%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-80{
+  width: 80%;
+}
+.w-100 {
+  width: 100%;
+}
+.container {
+  border: black 1px solid;
+}
+
+th {
+  border: black 2px solid;
+  background-color: rgb(192, 189, 189);
+}
+
+td {
+  padding:5px;
+  border: black 1px solid;
+}
+
+.space {
+  background-color: white;
+  color: white;
+  border: white 1px solid;
+}
+.d-flex {
+  display: flex;
+}
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+.text-center {
+  text-align: center;
+}
+.mt-16{
+  margin-top: 160px;
+}
+.mt-1{
+  margin-top: 10px;
+}
+.f-weight{
+  font-weight: bold;
+}
+.td{
+	height: 110px !important;
+    margin-bottom: 20px;
+}

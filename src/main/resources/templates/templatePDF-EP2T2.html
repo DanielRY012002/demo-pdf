@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+
+<body>
+	<div class="w-100">
+		<div class="w-35 f-left">
+			<img th:attr="src=@{/images/logo-sernanp.jpeg}" src="../public/images/logo-sernanp.jpeg" class="logo"
+				title="SERNANP" alt="Template 01 - Proyecto SERNANP" />
+		</div>
+		<div class="w-65 f-right">
+			<h3 class="text-center">FORMATO: Reporte de evaluación del Plan Maestro</h3>
+			<table class="w-100">
+				<thead>
+					<tr>
+						<th class="w-40 d-none"></th>
+						<th class="w-60 d-none"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Área Natural Protegida</td>
+						<td th:text="${anpname}">data</td>
+					</tr>
+					<tr>
+						<td>Fecha</td>
+						<td th:text="${fecha}">data</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="container mt-16">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th>Nº</th>
+					<th>Aspectos orientadores y criterios claves a evaluar</th>
+					<th>Puntuación</th>
+					<th>Comentarios y sustento técnico</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th colspan="4" class="text-center">PERTINENCIA: Diseño del Plan Maestro vigente</th>
+				</tr>
+				<section th:each="item : ${table12}">
+					<tr>
+						<th th:text="${item.descripcion}" colspan="4" class="text-center">data</th>
+					</tr>
+					<tr th:each=" criterio: ${item.criterios}">
+						<td class="text-center w-10" th:text="${criterio.n}">data</td>
+						<td class="text-center w-10" th:text="${criterio.aspecto}">data</td>
+						<td class="text-center w-10" th:text="${criterio.puntuacion}">data</td>
+						<td class="text-center w-10" th:text="${criterio.comentario}">data</td>
+					</tr>
+				</section>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-10 d-none"></th>
+					<th class="w-30 d-none"></th>
+					<th class="w-20 d-none"></th>
+					<th class="w-10 d-none"></th>
+					<th class="w-30 d-none"></th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<section th:each="item : ${table12}">
+					<tr>
+						<th th:text="${item.descripcion}" colspan="5" class="text-center">data</th>
+					</tr>
+					<tr th:each=" criterio: ${item.criterios}">
+						<td class="text-center w-10" th:text="${criterio.n}">data</td>
+						<td class="text-center w-10" th:text="${criterio.aspecto}">data</td>
+						<td class="text-center w-10" th:text="${criterio.puntuacion}">data</td>
+						<td class="text-center w-10" th:text="${criterio.punto}">data</td>
+						<td class="text-center w-10" th:text="${criterio.comentario}">data</td>
+					</tr>
+				</section>
+				<tr>
+					<td colspan="2" class="text-center f-weight">PUNTAJE TOTAL OBTENIDO</td>
+					<td class="text-center">40</td>
+					<td colspan="2"></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="text-center f-weight">Resultado</td>
+					<td colspan="3" class="text-center">Se han logrado parcialmente los objetivos  y resultados propuestos en el Plan Maestro</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>

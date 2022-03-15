@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+	<div class="w-100 container" style="height:100px">
+		<div class="w-35 f-left">
+			<img th:attr="src=@{/images/logo-sernanp.jpeg}" src="../public/images/logo-sernanp.jpeg" class="logo"
+				title="SERNANP" alt="Template 01 - Proyecto SERNANP" />
+		</div>
+		<div class="w-65 f-right">
+			<h3 class="text-center">Direción de Desarrollo Estratégico UOF Políticas y Prospectivas</h3>
+		</div>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-30 d-none"></th>
+					<th class="w-70 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Para:</td>
+					<td th:text="${para}">data</td>
+				</tr>
+				<tr>
+					<td>De:</td>
+					<td th:text="${de}">data</td>
+				</tr>
+				<tr>
+					<td>Asunto:</td>
+					<td th:text="${asunto}">data</td>
+				</tr>
+				<tr>
+					<td>Referencia:</td>
+					<td th:text="${referencia}">data</td>
+				</tr>
+				<tr>
+					<td>Fecha:</td>
+					<td th:text="${fecha}">data</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="9">Seguimiento de los Objetivos del Plan Maestro</th>
+				</tr>
+				<tr>
+					<th rowspan="2">Objetivo</th>
+					<th rowspan="2">Elemento que comprende</th>
+					<th colspan="6">Criterios</th>
+					<th rowspan="2">Comentarios u observaciones</th>
+				</tr>
+				<tr>
+					<th>Indica cambio en el atributo del elemento</th>
+					<th>Contribuye al logro del estado futuro deseado  de la visión.</th>
+					<th>Es alcanzable en los próximos 5 años</th>
+					<th>Es medible </th>
+					<th>Es específico </th>
+					<th>Incorpora los elementos priorizados</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>OB 1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>OB 2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>OB 3</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p class="f-weight">Conclusión:</p>
+	<p>Formato de priorización de elementos  presenta observaciones, se adjunta formato ajustado.</p>
+	<p class="f-weight">Recomendacíon:</p>
+	<p>Remitir al ANP, para levantamiento de observaciones.</p>
+</body>
+</html>

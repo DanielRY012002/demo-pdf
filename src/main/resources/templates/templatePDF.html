@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+
+<body>
+	<div>
+		<img th:attr="src=@{/images/logo-sernanp.jpeg}" src="../public/images/logo-sernanp.jpeg" class="logo"
+			title="SERNANP" alt="Template 01 - Proyecto SERNANP" />
+	</div>
+	<div class="container">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th>Formato 1: Términos de Referencia del proceso de actualización del Plan Maestro del <span
+							th:text="${name}"></span></th>
+				</tr>
+				<tr>
+					<th class="space">.</th>
+				</tr>
+				<tr>
+					<th>Términos de Referencia Actualización Plan Maestro <span th:text="${name}"></span></th>
+				</tr>
+				<tr>
+					<th class="space">.</th>
+				</tr>
+			</thead>
+		</table>
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th class="w-70">Condiciones para iniciar un proceso de actualización de Plan Maestro</th>
+					<th class="w-30">Sustento</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="item : ${table01}">
+					<td th:text="${item.row1}">data</td>
+					<td th:text="${item.row2}">data</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-35 d-none"></th>
+					<th class="w-35 d-none"></th>
+					<th class="w-30 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<th colspan="2">Elaboración y aprobación de los Términos de Referencia del proceso de actualización
+						del Plan Maestro</th>
+					<th>Responsabilidad de la actividad</th>
+				</tr>
+				<tr th:each="item : ${table02}">
+					<td th:text="${item.row1}">data</td>
+					<td th:text="${item.row2}">data</td>
+					<td th:text="${item.row3}">data</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-35 d-none"></th>
+					<th class="w-35 d-none"></th>
+					<th class="w-30 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<th colspan="3">Sistematización de información previa</th>
+				</tr>
+				<tr>
+					<td colspan="3">En esta etapa se realiza la evolución de Plan maestro en el que se evalúa el nivel
+						de cumplimiento de compromisos, actividades, estrategias y objetivos planteados, y se realiza la
+						evaluación del Diseño del Plan Maestro, enfocando el análisis de la coherencia del Plan Maestro
+						del ANP. Además se sistematiza y analiza la información para elaborar el Análisis de la
+						situación actual del ANP que sirve de insumo para cada etapa del proceso de actualización del
+						PM. El análisis de la situación actual debe contener: caracterización biofísica y socioeconómica
+						del <span th:text="${name}"></span> y la vinculación de los elementos ambientales priorizados
+						con
+						los servicios ecosistémicos y bienestar de la población, este documento usa como fuente
+						principal información contenida en el Diagnóstico del <span th:text="${name}"></span>
+						La evaluación del Plan Maestro vigente y el Análisis de la situación actual del ANP deben ser
+						socializados y recoger los aportes que correspondan de la Comisión Ejecutiva del Comité de
+						Gestión.
+					</td>
+				</tr>
+				<tr th:each="item : ${table03}">
+					<td th:text="${item.row1}">data</td>
+					<td th:text="${item.row2}">data</td>
+					<td th:text="${item.row3}">data</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-35 d-none"></th>
+					<th class="w-35 d-none"></th>
+					<th class="w-30 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<th colspan="3">Comunicación de inicio del proceso de actualización del Plan Maestro del PNT</th>
+				</tr>
+				<tr>
+					<td colspan="3">
+						Describir la forma en que se busca informar a los actores relacionados al <span
+							th:text="${name}"></span>
+						sobre el inicio del proceso de actualización del Plan Maestro. Obligatoriamente deberá
+						incluir una publicación en un diario de circulación regional y la comunicación a los miembros
+						del Comité de Gestión. Esta etapa puede darse desde la aprobación de los TdR del proceso.
+					</td>
+				</tr>
+				<tr class="text-center">
+					<td>data</td>
+					<td>data</td>
+					<td>data</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-35 d-none"></th>
+					<th class="w-35 d-none"></th>
+					<th class="w-30 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<th colspan="3">Definición de la visión, objetivos priorizados y modelo conceptual</th>
+				</tr>
+				<tr>
+					<td colspan="3">
+						En esta etapa se debe definir el número de reuniones, la forma cómo se piensa construir la
+						visión compartida (a partir de un análisis prospectivo, de ser posible ) y la priorización de
+						objetivos a 5 años. Debe especificarse los interesados que participarían y los criterios para
+						separar públicos objetivos, además de identificar las fechas en que se realizarán las reuniones
+						y de ser el caso la forma como se consolidará la visión compartida y la elección de los
+						representantes para conformar los grupos de interés que desarrollarán las estrategias y el
+						establecimiento de compromisos. En esta etapa se desarrolla la primera parte del modelo
+						conceptual referida a los factores que inciden sobre los elementos ambientales priorizados.
+					</td>
+				</tr>
+				<tr th:each="item : ${table05}">
+					<td th:text="${item.row1}">data</td>
+					<td th:text="${item.row2}">data</td>
+					<td th:text="${item.row3}">data</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-35 d-none"></th>
+					<th class="w-35 d-none"></th>
+					<th class="w-30 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<th colspan="3">Diseño de estrategias y resultados </th>
+				</tr>
+				<tr>
+					<td colspan="3">
+						En esta etapa se identifican los grupo de interés con los cuales se trabaja para decidir si se
+						continúan, mejoran o modifican las estrategias priorizadas en el modelo conceptual y se
+						desarrolla la cadena de resultados, metas e indicadores para alcanzar los objetivos
+						considerados. El desarrollo de las estrategias se realiza con los grupos de interés
+						identificados. Deberá preverse si los grupos interés se subdividirán por sectores o por temas, y
+						la forma como se convocara a los actores para el trabajo de dichos grupos y la metodología a
+						seguir para este trabajo.
+					</td>
+				</tr>
+				<tr th:each="item : ${table06}">
+					<td th:text="${item.row1}">data</td>
+					<td th:text="${item.row2}">data</td>
+					<td th:text="${item.row3}">data</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-35 d-none"></th>
+					<th class="w-35 d-none"></th>
+					<th class="w-30 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<th colspan="3">Diseño de la Zonificación y revisión de la Zona de Amortiguamiento</th>
+				</tr>
+				<tr>
+					<td colspan="3">
+						La zonificación es la espacialización de las acciones que se realizan dentro del <span
+							th:text="${name}"></span> y precisa los criterios, condiciones y normas de uso. Para su
+						diseño o revisión
+						del diseño se debe usar información del diagnóstico en relación a los valores ambientales, usos,
+						derechos, entre otras características del espacio.
+						Sobre la Zona de Amortiguamiento - ZA se debe revisar, si la actual ZA sigue vigente o requiere
+						ajustes en cuyo caso debe trabajarse además la Memoria descriptiva.
+					</td>
+				</tr>
+				<tr th:each="item : ${table06}">
+					<td th:text="${item.row1}">data</td>
+					<td th:text="${item.row2}">data</td>
+					<td th:text="${item.row3}">data</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-35 d-none"></th>
+					<th class="w-35 d-none"></th>
+					<th class="w-30 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<th colspan="3">Validación del Plan Maestro</th>
+				</tr>
+				<tr>
+					<td colspan="3">
+						Precisar la forma en que se plantea validar la versión preliminar de Plan Maestro que incorpora
+						la zonificación, con los diferentes actores. Como mínimo deberá preverse las reuniones de
+						presentación a nivel de los sectores en que se divide el Comité de Gestión asegurando tengan
+						oportunidad de participar los miembros del Comité de Gestión. La propuesta de zonificación se
+						presentará a los diferentes actores, los actores podrán presentar por escrito sus observaciones
+						en relación a la afectación asociada a sus derechos, sustentándolas debidamente. Se debe incluir
+						entre los actores invitados a los titulares de derechos al interior del <span
+							th:text="${name}"></span>.
+						De haber cambios en la Zona de amortiguamiento también debe ser presentada ante los
+						actores. En las actas de las reuniones deben precisarse los comentarios u observaciones a la
+						zonificación y Zona de amortiguamiento, y se debe indicar hasta que fecha se recibirán las
+						observaciones de manera formal.
+					</td>
+				</tr>
+				<tr th:each="item : ${table07}">
+					<td th:text="${item.row1}">data</td>
+					<td th:text="${item.row2}">data</td>
+					<td th:text="${item.row3}">data</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-35 d-none"></th> 
+					<th class="w-35 d-none"></th>
+					<th class="w-30 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<th colspan="3">Aprobación del Plan Maestro</th>
+				</tr>
+				<tr>
+					<td colspan="3">
+						Posterior a la presentación ante la Comisión Ejecutiva del Comité de Gestión, se remitirá la
+						versión definitiva del Plan Maestro, junto con el Acta de validación de la CECG y el respectivo
+						informe de sustento del proceso participativo elaborado por la Jefatura del ANP para la
+						posterior sustentación de la versión definitiva ante la Alta Dirección del SERNANP.
+					</td>
+				</tr>
+				<tr th:each="item : ${table08}">
+					<td th:text="${item.row1}">data</td>
+					<td th:text="${item.row2}">data</td>
+					<td th:text="${item.row3}">data</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h6>CONSIDERAR: Los Términos de Referencia están supeditados a cambios en fechas</h6>
+
+</body>
+
+</html>

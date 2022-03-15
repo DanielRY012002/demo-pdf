@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+
+<body>
+	<div class="w-100">
+		<div class="w-35 f-left">
+			<img th:attr="src=@{/images/logo-sernanp.jpeg}" src="../public/images/logo-sernanp.jpeg" class="logo"
+				title="SERNANP" alt="Template 01 - Proyecto SERNANP" />
+		</div>
+		<div class="w-65 f-right">
+			<h3 class="text-center">DIRECCIÓN DE DESARROLLO ESTRATÉGICO UOF Políticas y Prospectivas</h3>
+		</div>
+	</div>
+	<table class="w-100 mt-7">
+		<thead>
+			<tr>
+				<th class="w-50 d-none"></th>
+				<th class="w-50 d-none"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Para:</td>
+				<td th:text="${para}">data</td>
+			</tr>
+			<tr>
+				<td>De:</td>
+				<td th:text="${de}">data</td>
+			</tr>
+			<tr>
+				<td>Asunto:</td>
+				<td th:text="${asunto}">data</td>
+			</tr>
+			<tr>
+				<td>Referencia:</td>
+				<td th:text="${referencia}">data</td>
+			</tr>
+			<tr>
+				<td>Fecha:</td>
+				<td th:text="${fecha}">data</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-50 d-none"></th>
+					<th class="w-50 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<th colspan="2">Seguimiento de Términos de Referencia y observaciones presentadas</th>
+				</tr>
+				<tr>
+					<td>Área Natural Protegida:</td>
+					<td th:text="${anpname}">data</td>
+				</tr>
+				<tr>
+					<td>Fecha de Presentación del Término de Referencia</td>
+					<td th:text="${fechapresentacion}">data</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-45 d-none"></th>
+					<th class="w-10 d-none"></th>
+					<th class="w-45 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<th colspan="3">Requisitos para la presentación de los TdR del proceso de elaboración/actualización
+						del Plan Maestro</th>
+				</tr>
+				<tr>
+					<td class="f-weight text-center">Requisito</td>
+					<td class="f-weight text-center">Presento (Si/No)</td>
+					<td class="f-weight text-center">Comentario/Observación</td>
+				</tr>
+				<tr th:each="item : ${table09}">
+					<td th:text="${item.row1}">data</td>
+					<td class="text-center" th:text="${item.row2}">data</td>
+					<td th:text="${item.row3}">data</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-45 d-none"></th>
+					<th class="w-10 d-none"></th>
+					<th class="w-45 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<th colspan="3">Criterios de Evaluación de los TdR para la elaboración/ actualización del Plan
+						Maestro</th>
+				</tr>
+				<tr>
+					<td class="f-weight text-center">Criterio</td>
+					<td class="f-weight text-center">Presento (Si/No)</td>
+					<td class="f-weight text-center">Comentario/Observación</td>
+				</tr>
+				<section th:each="item : ${table10}">
+					<tr>
+						<td th:text="${item.descripcion}" colspan="3" class="text-center f-weight">data</td>
+					</tr>
+					<tr th:each=" criterio: ${item.criterios}">
+						<td th:text="${criterio.row1}">data</td>
+						<td class="text-center" th:text="${criterio.row2}">data</td>
+						<td th:text="${criterio.row3}">data</td>
+					</tr>
+				</section>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-45 d-none"></th>
+					<th class="w-10 d-none"></th>
+					<th class="w-45 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<th colspan="3">Criterios de Evaluación del Acta de la Comisión Ejecutiva que aprueba los TdR para
+						la elaboración/ actualización del Plan Maestro</th>
+				</tr>
+				<tr>
+					<td class="f-weight text-center">Criterio</td>
+					<td class="f-weight text-center">Cumple</td>
+					<td class="f-weight text-center">Comentario/Observación</td>
+				</tr>
+				<section th:each="item : ${table11}">
+					<tr>
+						<td th:text="${item.descripcion}" colspan="3" class="text-center f-weight">data</td>
+					</tr>
+					<tr th:each=" criterio: ${item.criterios}">
+						<td th:text="${criterio.row1}">data</td>
+						<td class="text-center" th:text="${criterio.row2}">data</td>
+						<td th:text="${criterio.row3}">data</td>
+					</tr>
+				</section>
+			</tbody>
+		</table>
+	</div>
+	<p class="f-weight">Conclución:</p>
+	<p>TdR no presenta observaciones.</p>
+	<p> </p>
+	<p class="f-weight">Recomendación:</p>
+	<p>Solicitar a OAJ el proyecto de RD que aprueba los TdR del proceso de actualización del Plan Maestro del <span
+			th:text="${name}"></span></p>
+	<p> </p>
+	<p>Es todo cuanto informo para su conocimiento y fines que estimen conveniente.
+
+		Atentamente, </p>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Raffle Thymeleaf Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>RESULTADOS DEL SORTEO</h1>
+	<h3>ENHORABUENA A LOS PREMIADOS PDF</h3>
+	
+    <form action="#" th:action="@{/raffle/pdf/ep1}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EP-1" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/epr1}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EPR-1" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/ep2t1}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EP-2 T1" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/ep2t2}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EP-2 T2" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/ep2}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EP-2" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/epr2}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EPR-2" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/ep3t1}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EP-3 T1" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/ep3}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EP-3" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/epr3}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EPR-3" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/ef1d1}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EF-1 D1" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/ef1d2}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EF-1 D2" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/ef1d3}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EF-1 D3" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/efr1}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EFR-1" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/ef2d1}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EF-2 D1" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/ef2d1}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EF-2 D2" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/efr2}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EFR-2" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/ef3}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EF-3" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/efr3}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EFR-3" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/ef4}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EF-4" />
+	</form>
+	<form action="#" th:action="@{/raffle/pdf/efr4}" th:object="${raffle}" method="get">
+    	<input type="submit" value="Download PDF EFR-4" />
+	</form>
+</body>
+</html>

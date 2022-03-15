@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+
+<body>
+
+	<div>
+		<img th:attr="src=@{/images/logo-sernanp.jpeg}" src="../public/images/logo-sernanp.jpeg" class="logo"
+			title="SERNANP" alt="Template 01 - Proyecto SERNANP" />
+	</div>
+	<p class="thick title">Hola <span th:text="${name}"></span>!</p>
+
+	<table class="tabla-detalle">
+		<h1 class="title-custom" th:text="${titleOne}"></h1>
+		<tr>
+			<th>Preguntas:</th>
+			<th>Respuestas:</th>
+			<th>Estado:</th>
+		</tr>
+
+		<tr th:each="item : ${questionnaire}">
+			<td th:text="${item.question.QuestionText}">Pregunta</td>
+			<td th:text="${item.ResponseValue}">Respuesta</td>
+			<td th:text="${item.status}">Estado</td>
+		</tr>
+
+		<tr>
+			<th>Preguntas:</th>
+			<th>Respuestas:</th>
+		</tr>
+
+		<tr th:each="item : ${questionnaire}">
+			<td th:text="${item.question.QuestionText}">Pregunta</td>
+			<td th:text="${item.ResponseValue}">Respuesta</td>
+		</tr>
+
+	</table>
+	<!-- <table class="tabla-detalle">
+		<tr>
+			<th>Preguntas:</th>
+			<th>Respuestas:</th>
+		</tr>
+
+		<tr th:each="item : ${questionnaire}">
+			<td th:text="${item.question.QuestionText}">Pregunta</td>
+			<td th:text="${item.ResponseValue}">Respuesta</td>
+		</tr>
+
+	</table> -->
+	<table class="tabla-detalle">
+		<tr>
+			<th>Preguntas:</th>
+			<th>Respuestas:</th>
+			<th>Estado:</th>
+		</tr>
+
+		<tr th:each="item : ${questionnaire}">
+			<td th:text="${item.question.QuestionText}">Pregunta</td>
+			<td th:text="${item.ResponseValue}">Respuesta</td>
+			<td th:text="${item.status}">Estado</td>
+		</tr>
+
+	</table>
+
+	<!-- Footer -->
+	<div id="footer" class="tabla-pie">
+		<b>&copy; 2021 Sernanp - Todos los derechos reservados</b>
+	</div>
+
+	<!-- <table>
+	</table> -->
+
+</body>
+
+<!-- <script>
+
+	const saludo = 'HOLA';
+	// `$
+
+	let mountains = [
+		{ name: `Monte Falco ${saludo}`, height: 1658, place: `Parco Foreste Casentinesi ${saludo}` },
+		{ name: `Monte Falterona ${saludo}`, height: 1654, place: `Parco Foreste Casentinesi ${saludo}` },
+		{ name: `Poggio Scali ${saludo}`, height: 1520, place: `Parco Foreste Casentinesi ${saludo}` },
+		{ name: `Pratomagno ${saludo}`, height: 1592, place: `Parco Foreste Casentinesi ${saludo}` },
+		{ name: `Monte Amiata ${saludo}`, height: 1738, place: `Siena` }
+	];
+
+	function generateTableHead(table, data) {
+		let thead = table.createTHead();
+		let row = thead.insertRow();
+		for (let key of data) {
+			let th = document.createElement("th");
+			let text = document.createTextNode(key);
+			th.appendChild(text);
+			row.appendChild(th);
+		}
+	}
+
+	function generateTable(table, data) {
+		for (let element of data) {
+			let row = table.insertRow();
+			for (key in element) {
+				let cell = row.insertCell();
+				let text = document.createTextNode(element[key]);
+				cell.appendChild(text);
+			}
+		}
+	}
+
+	let table = document.querySelector("table");
+	let data = Object.keys(mountains[0]);
+	generateTableHead(table, data);
+	generateTable(table, mountains);
+
+</script> -->
+
+</html>

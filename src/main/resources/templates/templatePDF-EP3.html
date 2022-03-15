@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+
+<body>
+	<div class="w-100 container head">
+		<div class="w-35 f-left">
+			<img th:attr="src=@{/images/logo-sernanp.jpeg}" src="../public/images/logo-sernanp.jpeg" class="logo"
+				title="SERNANP" alt="Template 01 - Proyecto SERNANP" />
+		</div>
+		<div class="w-65 f-right">
+			<h3 class="text-center">DIRECCIÓN DE DESARROLLO ESTRATÉGICO UOF Políticas y Prospectivas</h3>
+		</div>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th colspan="2" class="text-center">FORMATO: Análisis de la situación actual de los elementos del ANP</th>
+				</tr>
+				<tr>
+					<th class="w-40 d-none"></th>
+					<th class="w-60 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Área Natural Protegida</td>
+					<td th:text="${anpname}">data</td>
+				</tr>
+				<tr>
+					<td>Fecha</td>
+					<td th:text="${fecha}">data</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="4">Elementos ambientales(Ecosistemas y/o especies)</th>
+				</tr>
+				<tr>
+					<th>Nº</th>
+					<th>Item</th>
+					<th>Tipo</th>
+					<th>Análisis situacional (+)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="w-10"></td>
+					<td class="w-30"></td>
+					<td class="w-30"></td>
+					<td class="w-30">Cumplió con la información requerida con la herramienta</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="4">Servicios ecosistemicos</th>
+				</tr>
+				<tr>
+					<th>Nº</th>
+					<th>Item</th>
+					<th>Tipo</th>
+					<th>Análisis situacional (+)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="w-10"></td>
+					<td class="w-30"></td>
+					<td class="w-30"></td>
+					<td class="w-30"></td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="4">Bienestar humano</th>
+				</tr>
+				<tr>
+					<th>Nº</th>
+					<th>Item</th>
+					<th>Tipo</th>
+					<th>Análisis situacional (+)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="w-10"></td>
+					<td class="w-30"></td>
+					<td class="w-30"></td>
+					<td class="w-30"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="4">NOTA: Definiciones a tener en cuenta para la identificación de los elementos para la conservación de la biodiversidad</th>
+				</tr>
+				<tr>
+					<th>ELEMENTOS PARA LA CONSERVACIÓN</th>
+					<th>TIPOS</th>
+					<th>DEFINCIÓN</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="text-center">data</td>
+					<td class="text-center">data</td>
+					<td>data</td>
+				</tr>
+				<tr>
+					<td class="text-center">data</td>
+					<td class="text-center">data</td>
+					<td>data</td>
+				</tr>
+				<tr>
+					<td class="text-center">data</td>
+					<td class="text-center">data</td>
+					<td>data</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>
