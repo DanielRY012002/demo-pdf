@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+	<div class="w-100 container" style="height:100px">
+		<div class="w-35 f-left">
+			<img th:attr="src=@{/images/logo-sernanp.jpeg}" src="../public/images/logo-sernanp.jpeg" class="logo"
+				title="SERNANP" alt="Template 01 - Proyecto SERNANP" />
+		</div>
+		<div class="w-65 f-right">
+			<h3 class="text-center">Direción de Desarrollo Estratégico UOF Políticas y Prospectivas</h3>
+		</div>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-30 d-none"></th>
+					<th class="w-70 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>A:</td>
+					<td th:text="${a}">data</td>
+				</tr>
+				<tr>
+					<td>De:</td>
+					<td th:text="${de}">data</td>
+				</tr>
+				<tr>
+					<td>Asunto:</td>
+					<td th:text="${asunto}">data</td>
+				</tr>
+				<tr>
+					<td>Referencia:</td>
+					<td th:text="${referencia}">data</td>
+				</tr>
+				<tr>
+					<td>Fecha:</td>
+					<td th:text="${fecha}">data</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="8">Seguimiento a la priorización de amenazas</th>
+				</tr>
+				<tr>
+					<th rowspan="2">Amenaza</th>
+					<th rowspan="2">Elementos Ambientales</th>
+					<th colspan="5">Criterios (Sí/No)</th>
+					<th rowspan="2">Comentarios u Observaciones</th>
+				</tr>
+				<tr>
+					<th>El análisis está orientado en el atributo ecológico del elemento ambiental</th>
+					<th>Los resultados sobre el criterio de Alcance utiliza información geográfica espacial de la amenaza al elemento*</th>
+					<th>Los resultados sobre el criterio de Severidad utiliza información del impacto de la amenaza sobre el elemento ambiental*</th>
+					<th>Los resultados sobre el criterio de Tiempo de recuperación utiliza información sobre la recuperación del ecosistema (ambiental, económico y social)*</th>
+					<th>Se ha sustentado técnicamente la selección de la amenaza priorizada, tomando en cuenta la matriz de priorización </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Amenaza 1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Amenaza 2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Amenaza 3</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Amenaza X</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p><i>*En base la información disponible</i></p>
+	<p class="f-weight">Conclusión:</p>
+	<p>Formato de modelos conceptuales  presenta observaciones, se adjunta formato ajustado.</p>
+	<p class="f-weight">Recomendacíon:</p>
+	<p>Remitir al ANP, para levantamiento de observaciones.</p>
+	<p class="mt-8">Blga. / Ing.</p>
+	<p>Especialista de ANP </p>
+	<p>DDE</p>
+</body>
+</html>

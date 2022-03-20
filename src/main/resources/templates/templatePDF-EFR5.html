@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+	<div class="w-100 container" style="height:100px">
+		<div class="w-35 f-left">
+			<img th:attr="src=@{/images/logo-sernanp.jpeg}" src="../public/images/logo-sernanp.jpeg" class="logo"
+				title="SERNANP" alt="Template 01 - Proyecto SERNANP" />
+		</div>
+		<div class="w-65 f-right">
+			<h3 class="text-center">Direción de Desarrollo Estratégico UOF Políticas y Prospectivas</h3>
+		</div>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-30 d-none"></th>
+					<th class="w-70 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>A:</td>
+					<td th:text="${a}">data</td>
+				</tr>
+				<tr>
+					<td>De:</td>
+					<td th:text="${de}">data</td>
+				</tr>
+				<tr>
+					<td>Asunto:</td>
+					<td th:text="${asunto}">data</td>
+				</tr>
+				<tr>
+					<td>Referencia:</td>
+					<td th:text="${referencia}">data</td>
+				</tr>
+				<tr>
+					<td>Fecha:</td>
+					<td th:text="${fecha}">data</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="3">Seguimiento al Modelo Conceptual</th>
+				</tr>
+				<tr>
+					<th class="w-35">Criterio</th>
+					<th class="w-30">Cumple Si/No</th>
+					<th class="w-35">OBSERVACIONES Y COMENTARIOS</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>El modelo conceptual identifica: Elemento ambiental priorizado, amenazas directas, efectos y presiones, y sus factores asociados.</td>
+					<td></td>
+					<td></td>
+					
+				</tr>
+				<tr>
+					<td>El modelo conceptual asocia la relación entre los efectos y las presiones </td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>El modelo conceptual grafica la relación de la amenazas con los elementos ambientales priorizados</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>El modelo conceptual grafica la relación entre las distintas amenazas y sus factores asociados</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>El modelo es sencillo de comprender y las relaciones establecidas guardan coherencia causal.</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Los factores identificados permiten entender la situación del elemento ambiental </td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>El modelo conceptual identifica las oportunidades frente a las causas como para eliminar o disminuir las amenazas</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>El modelo presenta la relación entre los elementos ambientales, servicios ecosistémicos, la contribución al bienestar humano y los actores beneficiarios</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p class="f-weight">Conclusión:</p>
+	<p class="f-weight">Recomendacíon:</p>
+	<p>Remitir al ANP, para levantamiento de observaciones.</p>
+	<p class="mt-8">Blga. / Ing.</p>
+	<p>Especialista de ANP </p>
+	<p>DDE</p>
+</body>
+</html>

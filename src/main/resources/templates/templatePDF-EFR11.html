@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+	<div class="container">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="2">Informe N°-2014-SERNANP-DDE</th>
+				</tr>
+				<tr>
+					<th class="w-30 d-none"></th>
+					<th class="w-70 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="w-30">A:</td>
+					<td class="w-70" th:text="${a}">data</td>
+				</tr>
+				<tr>
+					<td>De:</td>
+					<td th:text="${de}">data</td>
+				</tr>
+				<tr>
+					<td>Asunto:</td>
+					<td th:text="${asunto}">data</td>
+				</tr>
+				<tr>
+					<td>Referencia:</td>
+					<td th:text="${referencia}">data</td>
+				</tr>
+				<tr>
+					<td>Fecha:</td>
+					<td th:text="${fecha}">data</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p class="mt-1">Criterio de Evaluación: </p>
+        <p>La zona de amortiguamiento es el ámbito hasta donde se considera necesario dar opinión sobre las actividades que se desarrollan en el entorno del parea natural protegida a fin de asegurar que se tomen las previsiones para minimizar su impacto dentro del área natural protegida.</p>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="3" class="f-weight">FORMATO I-2.0: Evaluación de la Zona de Amortiguamiento</th>
+				</tr>
+				<tr>
+					<th class="w-40">Criterio</th>
+					<th class="w-20">Sí/No</th>
+					<th class="w-40">Observación / Comentario</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Cuenta con sustento técnico</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Sigue vigente el sustento técnico</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Presento Memoria descriptiva según formato</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Presento Mapa (UTM, WGS84)</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Presento Shapefiles de la ZA</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p class="f-weight">Conclusión:</p>
+		<p>Formato de modelos conceptuales  presenta observaciones, se adjunta formato ajustado.</p>
+		<p class="f-weight">Recomendacíon:</p>
+		<p>Remitir el informe a la Jefatura del ANP para que remita los compromisos de los actores.</p>
+		<p class="mt-8">Blga. / Ing.</p>
+		<p>Especialista de ANP </p>
+		<p>DDE</p>
+</body>
+</html>

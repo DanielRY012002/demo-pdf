@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+	<div class="container">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="2">Informe N°-año-SERNANP-DDE</th>
+				</tr>
+				<tr>
+					<th class="w-30 d-none"></th>
+					<th class="w-70 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="w-30">A:</td>
+					<td class="w-70" th:text="${a}">data</td>
+				</tr>
+				<tr>
+					<td>De:</td>
+					<td th:text="${de}">data</td>
+				</tr>
+				<tr>
+					<td>Asunto:</td>
+					<td th:text="${asunto}">data</td>
+				</tr>
+				<tr>
+					<td>Referencia:</td>
+					<td th:text="${referencia}">data</td>
+				</tr>
+				<tr>
+					<td>Fecha:</td>
+					<td th:text="${fecha}">data</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="2" class="f-weight">FORMATO : Evaluación de la conformación de Grupos de Interés</th>
+				</tr>
+				<tr>
+					<th class="w-40 d-none"></th>
+					<th class="w-60 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Área Natural Protegida:</td>
+					<td>(Especificar ANP)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th class="w-100" colspan="3">Requisitos para la conformación de sus Grupos de Interes</th>	
+				</tr>
+				<tr>
+					<th class="w-40">Requisito</th>
+					<th class="w-20">Presento (Si/No)</th>
+					<th class="w-40">Comentario/Observación</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>a. Se cuenta con una visión validada</td>
+                    <td></td>
+                    <td></td>
+				</tr>
+                <tr>
+                    <td>b.  Se cuenta con Objetivos del Plan Maestro</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>c. Se cuenta con resultados intermedios </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>d. Se cuenta con un mapa de actores validado en Comité de Gestión</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>e. Se han conformado los grupos de interes de acuerdo a las estrategias priorizadas</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>f. Los actores que conforman los grupos de interes corresponden con los registrados en el mapa de actores</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+			</tbody>
+		</table>
+	</div>
+	<p class="f-weight">Conclusión:</p>
+	<p>Formato de modelos conceptuales  presenta observaciones, se adjunta formato ajustado.</p>
+	<p class="f-weight">Recomendacíon:</p>
+	<p>Remitir al ANP, para levantamiento de observaciones.</p>
+	<p class="mt-8">Blga. / Ing.</p>
+	<p>Especialista de ANP </p>
+	<p>DDE</p>
+</body>
+</html>

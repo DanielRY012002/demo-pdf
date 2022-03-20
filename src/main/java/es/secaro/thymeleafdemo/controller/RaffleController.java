@@ -62,7 +62,23 @@ public class RaffleController {
 	private String templateName18 = "templatePDF-EFR3.html";
 	private String templateName19 = "templatePDF-EF4.html";
 	private String templateName20 = "templatePDF-EFR4.html";
-
+	
+	private String templateName21 = "templatePDF-EF5.html";
+	private String templateName22 = "templatePDF-EFR5.html";
+	private String templateName23 = "templatePDF-EF6.html";
+	private String templateName24 = "templatePDF-EFR6.html";
+	private String templateName25 = "templatePDF-EF7.html";
+	private String templateName26 = "templatePDF-EFR7.html";
+	private String templateName29 = "templatePDF-EF9.html";
+	private String templateName30 = "templatePDF-EFR9.html";
+	private String templateName33 = "templatePDF-EF11.html";
+	private String templateName34 = "templatePDF-EFR11.html";
+	private String templateName35 = "templatePDF-Estructura_PM_Preliminar.html";
+	private String templateName37 = "templatePDF-Eval_PM_Preliminar.html";
+	private String templateName38 = "templatePDF-Grupo_de_Interes.html";
+	private String templateName39 = "templatePDF-Eval_GI.html";
+	private String templateName36 = "templatePDF-Informe_Precisiones.html";
+	
 	private String fileName = "reaffle.pdf";
 
 	@GetMapping("/raffle")
@@ -361,6 +377,173 @@ public class RaffleController {
 				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
 				.body(inputStreamResourcePDF);
 	}
+	
+	@GetMapping("/raffle/pdf/ef5")
+	public ResponseEntity<ByteArrayResource> rafflePDFEF5(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName21, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/efr5")
+	public ResponseEntity<ByteArrayResource> rafflePDFEFR5(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName22, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/ef6")
+	public ResponseEntity<ByteArrayResource> rafflePDFEF6(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName23, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/efr6")
+	public ResponseEntity<ByteArrayResource> rafflePDFEFR6(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName24, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/ef7")
+	public ResponseEntity<ByteArrayResource> rafflePDFEF7(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName25, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/efr7")
+	public ResponseEntity<ByteArrayResource> rafflePDFEFR7(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName26, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/ef9")
+	public ResponseEntity<ByteArrayResource> rafflePDFEF9(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName29, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/efr9")
+	public ResponseEntity<ByteArrayResource> rafflePDFEFR9(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName30, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/ef11")
+	public ResponseEntity<ByteArrayResource> rafflePDFEF11(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName33, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/efr11")
+	public ResponseEntity<ByteArrayResource> rafflePDFEFR11(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName34, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/estructura_pm_preliminar")
+	public ResponseEntity<ByteArrayResource> rafflePDFEstructura_PM_Preliminar(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName35, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/informe_precisiones")
+	public ResponseEntity<ByteArrayResource> rafflePDFInforme_Precisiones(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName36, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/eval_pm_preliminar")
+	public ResponseEntity<ByteArrayResource> rafflePDFEval_PM_Preliminar(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName37, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/grupo_de_interes")
+	public ResponseEntity<ByteArrayResource> rafflePDFGrupo_de_Interes(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName38, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	@GetMapping("/raffle/pdf/eval_gi")
+	public ResponseEntity<ByteArrayResource> rafflePDFEval_GI(@ModelAttribute final Raffle raffle,
+			final HttpServletRequest request, final HttpServletResponse response) throws DocumentException {
+		Map<String, Object> mapParameter = new HashMap<String, Object>();
+		ByteArrayOutputStream byteArrayOutputStreamPDF = pdfGenarator.createPdf(templateName39, mapParameter, request,
+				response);
+		ByteArrayResource inputStreamResourcePDF = new ByteArrayResource(byteArrayOutputStreamPDF.toByteArray());
+		return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName)
+				.contentType(MediaType.APPLICATION_PDF).contentLength(inputStreamResourcePDF.contentLength())
+				.body(inputStreamResourcePDF);
+	}
+	
 	/*
 	 * private List<Response> getResponseItems() { List<Response> dataArray = new
 	 * ArrayList<Response>() {}; Question questionItem1 = new Question(1,

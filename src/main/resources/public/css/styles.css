@@ -142,8 +142,14 @@ td {
 .mt-16{
   margin-top: 160px;
 }
+.mt-8{
+  margin-top: 80px;
+}
 .mt-1{
   margin-top: 10px;
+}
+.mt-3{
+  margin-top: 30px;
 }
 .f-weight{
   font-weight: bold;
@@ -151,4 +157,8 @@ td {
 .td{
 	height: 110px !important;
     margin-bottom: 20px;
+}
+
+.box-border{
+	border-style:none;
 }

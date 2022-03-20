@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+	<div class="container">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="2">Informe N°-20XX-SERNANP-DDE</th>
+				</tr>
+				<tr>
+					<th class="w-30 d-none"></th>
+					<th class="w-70 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="w-30">A:</td>
+					<td class="w-70" th:text="${a}">data</td>
+				</tr>
+				<tr>
+					<td>De:</td>
+					<td th:text="${de}">data</td>
+				</tr>
+				<tr>
+					<td>Asunto:</td>
+					<td th:text="${asunto}">data</td>
+				</tr>
+				<tr>
+					<td>Referencia:</td>
+					<td th:text="${referencia}">data</td>
+				</tr>
+				<tr>
+					<td>Fecha:</td>
+					<td th:text="${fecha}">data</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="2" class="f-weight">Seguimiento del proceso para la versión Preliminar del Plan Maestro</th>
+				</tr>
+				<tr>
+					<th class="w-40 d-none"></th>
+					<th class="w-60 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Área Natural Protegida:</td>
+					<td>(Especificar ANP)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th class="w-20">Etapa</th>
+					<th class="w-35">[Incluir lo que está en la norma]</th>
+					<th class="w-10">Sí/No</th>
+					<th class="w-35">Observaciones / Comentarios</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="8">Preliminar</td>
+                    <td>Presentación del mapa de actores</td>
+                    <td></td>
+                    <td></td>
+				</tr>
+                <tr>
+                    <td>Términos de referencia aprobados</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sustentación de los Términos de Referencia</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Publicación Diario Oficial El Peruano</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Publicación Diario Local</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Reporte de comunicaciones sobre el inicio del proceso</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Evaluación del Plan Maestro</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Análisis de la situación actual de los elementos </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+               <tr>
+                   <td rowspan="7">Formulación</td>
+                   <td>VºBº elementos priorizados</td>
+                   <td></td>
+                   <td></td>
+               </tr>
+                <tr>
+                    <td>VºBº visión</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>VºBº objetivos e indicadores</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>V°B° modelos conceptuales y hojas de ruta</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>V°B° estrategias y resultados</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>VºBº Zonificación y zona de amortiguamiento</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>Sustentación de la Zonificación</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                   <td rowspan="3">Consolidación</td>
+                   <td>Presentación del Plan Maestro Preliminar</td>
+                   <td></td>
+                   <td></td>
+               </tr>
+                 <tr>
+                    <td>Informe de sustento de precisiones</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                  <tr>
+                    <td>Sustentación del Plan Maestro</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

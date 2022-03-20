@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+	<div class="w-100 container" style="height:100px">
+		<div class="w-35 f-left">
+			<img th:attr="src=@{/images/logo-sernanp.jpeg}" src="../public/images/logo-sernanp.jpeg" class="logo"
+				title="SERNANP" alt="Template 01 - Proyecto SERNANP" />
+		</div>
+		<div class="w-65 f-right">
+			<h3 class="text-center">Direción de Desarrollo Estratégico UOF Políticas y Prospectivas</h3>
+		</div>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead>
+				<tr>
+					<th class="w-30 d-none"></th>
+					<th class="w-70 d-none"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>A:</td>
+					<td th:text="${a}">data</td>
+				</tr>
+				<tr>
+					<td>De:</td>
+					<td th:text="${de}">data</td>
+				</tr>
+				<tr>
+					<td>Asunto:</td>
+					<td th:text="${asunto}">data</td>
+				</tr>
+				<tr>
+					<td>Referencia:</td>
+					<td th:text="${referencia}">data</td>
+				</tr>
+				<tr>
+					<td>Fecha:</td>
+					<td th:text="${fecha}">data</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container mt-1">
+		<table class="w-100">
+			<thead class="text-center">
+				<tr>
+					<th colspan="3">Seguimiento a la Matriz de Planificación</th>
+				</tr>
+				<tr>
+					<th class="w-40">Criterio</th>
+					<th class="w-20">Cumple Sí/No</th>
+					<th class="w-40">Observaciones y Comentarios</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<td colspan="3">Matriz Planificación Estratégica - Objetivos</td>
+				</tr>
+				<tr>
+					<td>Se incluye los objetivos priorizados, indicadores, línea base, metas y supuestos</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Los indicadores de impacto establecidos en la matriz cumplen con los siguientes criterios: específicos, medibles, prácticas, viable, pertinente y limitada en el tiempo</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Los indicadores cuentan con una línea base</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Los supuestos establecidos son concretos, específicos y guarda relación con el objetivo planteado</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="text-center">
+					<td colspan="3">Matriz Planificación Estratégica - Resultados</td>
+				</tr>
+				<tr>
+					<td>Se incluye los objetivos priorizados, indicadores, línea base, metas y supuestos</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Los resultados claves identificados en la matriz representan el cambio esperado y permite el seguimiento en la implementación de la estrategia</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Los indicadores de resultados establecidos en la matriz cumplen con los siguientes criterios: específicos, medibles, prácticas, viable, pertinente y limitada en el tiempo</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Los supuestos establecidos son concretos, específicos y guarda relación con el resultado planteado</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
